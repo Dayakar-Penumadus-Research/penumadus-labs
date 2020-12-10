@@ -1,0 +1,14 @@
+.shadow {
+  box-shadow: 1px 1px 5px 2px var(--black-alpha);
+}
+
+.contained {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  background-color: var(--card-color);
+  padding: 2rem;
+}

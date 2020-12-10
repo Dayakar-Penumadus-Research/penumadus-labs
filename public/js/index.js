@@ -1,18 +1,15 @@
-const fetchHtml = async url => {
+import addStyle from './style.js'
+import { select } from './dom.js'
+
+const fetchTemplates = async url => {
   const resp = await fetch(url, { headers: { Accept: 'text/html' } })
   const html = await resp.text()
-  return new DOMParser().parseFromString(html, 'text/html')
+  const templates = new DOMParser().parseFromString(html, 'text/html')
+  return selector => templates.querySelector(selector).content.cloneNode(true)
 }
 
-const select = selector => document.querySelector(selector)
-
-const selectTemplate = selector =>
-  layout.querySelector(selector).content.cloneNode(true)
-
 void (async () => {
-  const layout = await fetchHtml('../layout/layout.html')
-  const selectTemplate = selector =>
-    layout.querySelector(selector).content.cloneNode(true)
+  const selectTemplate = await fetchTemplates('../templates/templates.html')
 
   const head = selectTemplate('#head')
   const header = selectTemplate('#header')
@@ -21,5 +18,6 @@ void (async () => {
   select('head').appendChild(head)
   select('header').appendChild(header)
   select('footer').appendChild(footer)
-  document.body.style.visibility = 'visible'
+
+  addStyle()
 })().catch(console.error)

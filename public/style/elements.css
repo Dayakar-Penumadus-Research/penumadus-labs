@@ -1,0 +1,91 @@
+:root {
+  --blue: rgb(32, 87, 124);
+  --orange: rgb(204, 104, 3);
+  --black: rgb(25, 27, 28);
+  --black-alpha: rgb(25, 27, 28, 0.5);
+  --white: rgb(199, 188, 188);
+  --white-dark: rgb(99, 96, 91);
+
+  --card-color: white;
+  --text-color: var(--black);
+  --text-hover: var(--white-dark);
+  --background-color: lightgray;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+  text-decoration: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+
+body {
+  visibility: hidden;
+  font-family: Helvetica;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+/* body > * + * {
+  margin-top: 50rem;
+  display: block;
+} */
+
+body {
+  position: relative;
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+main {
+  margin-top: 8rem;
+  min-height: 60vh;
+}
+
+main > * + * {
+  margin-top: 5rem;
+}
+
+nav > ul {
+  display: flex;
+  /* justify-content: space-evenly; */
+  background-color: var(--card-color);
+  padding: 1rem 0;
+}
+
+nav > ul > li {
+  margin-left: 23rem;
+}
+
+nav li {
+  list-style: none;
+  padding: 1rem 0;
+}
+
+a:hover {
+  color: var(--text-hover);
+}
+
+footer {
+  display: flex;
+}
+
+footer > * {
+  width: 50%;
+}
+
+footer > div + div {
+  text-align: center;
+}
