@@ -2,19 +2,17 @@
   position: relative;
 }
 
-.drop-down > * {
-  top: 3rem;
-  left: -1rem;
+.drop-down > ul {
   display: none;
   position: absolute;
   background-color: var(--card-color);
   padding: 1rem;
 }
 
-.drop-down:hover > * {
-  display: block;
-}
-
 .drop-down * {
   white-space: nowrap;
+}
+
+.hover:hover > * {
+  display: block;
 }

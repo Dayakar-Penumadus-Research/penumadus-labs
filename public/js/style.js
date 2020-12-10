@@ -6,7 +6,7 @@ const footer = select('footer')
 footer.classList.add('card')
 
 export default () => {
-  applyStylesToChildren(main, 'card', 'contained')
+  applyStylesToChildren(main, 'card', 'contained', 'shadow')
   applyStylesToChildren(footer, 'contained')
 
   // for (const img of document.querySelectorAll('img:not(footer img)')) {

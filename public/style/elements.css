@@ -1,15 +1,17 @@
 :root {
   --blue: rgb(32, 87, 124);
-  --orange: rgb(204, 104, 3);
+  --blue2: rgb(53, 107, 138);
+  --orange1: rgb(204, 104, 3);
+  --orange: rgb(255, 132, 0);
   --black: rgb(25, 27, 28);
   --black-alpha: rgb(25, 27, 28, 0.5);
   --white: rgb(199, 188, 188);
   --white-dark: rgb(99, 96, 91);
 
-  --card-color: white;
+  --card-color: #eee;
   --text-color: var(--black);
   --text-hover: var(--white-dark);
-  --background-color: lightgray;
+  --background-color: var(--blue2);
 }
 
 * {
@@ -31,11 +33,6 @@ body {
   font-weight: 500;
 }
 
-/* body > * + * {
-  margin-top: 50rem;
-  display: block;
-} */
-
 body {
   position: relative;
   background: var(--background-color);
@@ -54,6 +51,14 @@ main {
   min-height: 60vh;
 }
 
+main > *:first-child {
+  background-color: var(--orange);
+  color: #ddd;
+}
+
+/* main:first-child {
+} */
+
 main > * + * {
   margin-top: 5rem;
 }
@@ -64,29 +69,18 @@ nav {
 
 nav > ul {
   display: flex;
+  justify-content: space-evenly;
   padding: 1rem 0;
+  color: var(--orange);
 }
 
-nav > ul > li {
+/* nav > ul > li {
   margin-right: 16rem;
-}
+} */
 
 nav li {
   list-style: none;
   padding: 1rem;
-}
-
-footer {
-  display: flex;
-  align-items: center;
-}
-
-footer > * {
-  width: 50%;
-}
-
-footer > div + div {
-  text-align: center;
 }
 
 ol {
@@ -100,4 +94,12 @@ a:hover {
 img {
   width: 100%;
   height: auto;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
 }
