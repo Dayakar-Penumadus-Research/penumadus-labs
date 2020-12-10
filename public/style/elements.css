@@ -58,28 +58,27 @@ main > * + * {
   margin-top: 5rem;
 }
 
+nav {
+  background-color: var(--card-color);
+}
+
 nav > ul {
   display: flex;
-  /* justify-content: space-evenly; */
-  background-color: var(--card-color);
   padding: 1rem 0;
 }
 
 nav > ul > li {
-  margin-left: 23rem;
+  margin-right: 16rem;
 }
 
 nav li {
   list-style: none;
-  padding: 1rem 0;
-}
-
-a:hover {
-  color: var(--text-hover);
+  padding: 1rem;
 }
 
 footer {
   display: flex;
+  align-items: center;
 }
 
 footer > * {
@@ -88,4 +87,17 @@ footer > * {
 
 footer > div + div {
   text-align: center;
+}
+
+ol {
+  margin-left: 3rem;
+}
+
+a:hover {
+  color: var(--text-hover);
+}
+
+img {
+  width: 100%;
+  height: auto;
 }

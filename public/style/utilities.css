@@ -12,3 +12,18 @@
   background-color: var(--card-color);
   padding: 2rem;
 }
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.f2 > * {
+  width: 50%;
+}
+
+.f3 > * {
+  width: 33%;
+}
