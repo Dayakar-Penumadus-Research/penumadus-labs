@@ -5,7 +5,7 @@
 .drop-down > ul {
   display: none;
   position: absolute;
-  background-color: var(--card-color);
+  background-color: var(--nav-color);
   padding: 1rem;
 }
 
@@ -15,4 +15,8 @@
 
 .hover:hover > * {
   display: block;
+}
+
+.link {
+  color: rgb(67, 140, 189);
 }

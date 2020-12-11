@@ -1,9 +1,10 @@
 #logo-container {
-  text-align: center;
+  justify-content: space-evenly;
 }
 
-#logo-container > img {
-  max-width: 500px;
+#logo-container img {
+  height: 400px;
+  width: auto;
 }
 
 #drop-down-arrow {
@@ -15,11 +16,13 @@
   width: 2.5rem;
   height: 2.5rem;
   margin: 1rem;
+  cursor: pointer;
+  fill: var(--orange);
 }
 
 #nav-desktop .drop-down ul {
+  left: -1rem;
   top: 3rem;
-  left: -10rem;
 }
 
 #nav-mobile {

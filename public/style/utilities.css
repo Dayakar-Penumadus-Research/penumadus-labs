@@ -6,6 +6,10 @@
   box-shadow: 1px 2px 3px 2px var(--black-alpha);
 }
 
+.shadow-bottom {
+  box-shadow: 1px 2px 3px -1px var(--black-alpha);
+}
+
 .contained {
   max-width: 1000px;
   margin-left: auto;
@@ -23,6 +27,11 @@
   justify-content: space-between;
   align-items: flex-end;
   flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.flex p {
+  height: 5rem;
 }
 
 .f2 > * {
@@ -31,6 +40,34 @@
 
 .f3 > * {
   width: 33%;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-end {
+  flex-direction: row-reverse;
+}
+
+.height-300 img {
+  height: 300px;
+}
+
+.min-height img {
+  min-height: 200px;
+}
+
+.height-x img {
+  height: 500px;
+}
+
+.background-light {
+  background-color: var(--background-light);
 }
 
 @media only screen and (max-width: 1000px) {
