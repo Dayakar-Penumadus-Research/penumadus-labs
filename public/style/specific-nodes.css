@@ -37,4 +37,8 @@
   #nav-mobile {
     display: block;
   }
+
+  #logo-container img {
+    height: 300px;
+  }
 }
