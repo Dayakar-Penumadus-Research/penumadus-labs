@@ -3,7 +3,7 @@
 }
 
 .shadow {
-  box-shadow: 1px 2px 3px 2px var(--black-alpha);
+  box-shadow: 1px 2px 5px 1px var(--black-alpha);
 }
 
 .shadow-bottom {
@@ -71,7 +71,11 @@
 }
 
 .background-light {
-  background-color: var(--background-light);
+  /* background-color: var(--background-light); */
+}
+
+.background-dark {
+  background-color: #c8c8c8;
 }
 
 @media only screen and (max-width: 1000px) {

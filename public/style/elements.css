@@ -1,23 +1,20 @@
 :root {
-  --blue: rgb(36, 97, 138);
-  --blue2: rgb(36, 88, 121);
-  --blue3: #38698f;
+  --blue: #4a6b8b;
 
   --orange1: rgb(204, 104, 3);
   --orange: rgb(255, 132, 0);
 
   --black: rgb(25, 27, 28);
   --black-alpha: rgb(25, 27, 28, 0.5);
-  --black2: rgb(84, 107, 122);
 
   --white: rgb(199, 195, 188);
   --white-dark: rgb(99, 96, 91);
 
   /* --card-color: #162129; */
   --card-color: #eee;
-  --text-color: #333;
+  --text-color: var(--black);
   --text-hover: var(--white-dark);
-  --background-color: #4a6b8b;
+  --background-color: var(--blue);
   --background-light: #fff;
 }
 
@@ -58,10 +55,10 @@ main {
   min-height: 60vh;
 }
 
-main > *:first-child {
+/* main > *:first-child {
   background-color: var(--orange);
   color: #eee;
-}
+} */
 
 /* main:first-child {
 } */
@@ -71,12 +68,15 @@ main > * + * {
 }
 
 nav {
-  --nav-color: #ddd;
+  --nav-color: var(--card-color);
+  --nav-color: var(--orange);
+
   background-color: var(--nav-color);
 }
 
 nav * {
   color: var(--orange);
+  color: var(--card-color);
 }
 
 nav > ul {
